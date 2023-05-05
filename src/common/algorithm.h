@@ -13,7 +13,7 @@
 #include "xgboost/context.h"  // Context
 
 // clang with libstdc++ works as well
-#if defined(__GNUC__) && (__GNUC__ >= 4) && !defined(__sun) && !defined(sun) && !defined(__APPLE__) && !defined(EMSCRIPTEN)
+#if defined(__GNUC__) && (__GNUC__ >= 4) && !defined(__sun) && !defined(sun) && !defined(__APPLE__) && !defined(EMSCRIPTEN) && !defined(ANDROID)
 #define GCC_HAS_PARALLEL 1
 #endif  // GLIC_VERSION
 
